@@ -16,29 +16,29 @@ ActiveRecord::Schema.define(version: 3) do
     x.string "location"
     x.integer "costume_inventory"
     x.integer "num_of_employees"
-    t.boolean "still_in_business"
-    t.datetime "opening_time"
-    t.datetime "closing_time"
+    x.boolean "still_in_business"
+    x.datetime "opening_time"
+    x.datetime "closing_time"
   end
 
    create_table "costumes", force: :cascade do |x|
-    t.string "name"
+    x.string "name"
     t.integer "price"
-    t.string "size"
-    t.string "image_url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    x.string "size"
+    x.string "image_url"
+    x.datetime "created_at", null: false
+    x.datetime "updated_at", null: false
   end
 
    create_table "haunted_houses", force: :cascade do |x|
-    t.string "name"
-    t.string "location"
-    t.string "theme"
-    t.integer "price"
-    t.boolean "family_friendly"
-    t.date "opening_date"
-    t.date "closing_date"
-    t.text "description"
+    x.string "name"
+    x.string "location"
+    x.string "theme"
+    x.integer "price"
+    x.boolean "family_friendly"
+    x.date "opening_date"
+    x.date "closing_date"
+    x.text "description"
   end
 
  end
